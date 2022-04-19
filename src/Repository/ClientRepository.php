@@ -45,24 +45,22 @@ class ClientRepository extends ServiceEntityRepository
         }
     }
 
-    // /**
-    //  * @return Client[] Returns an array of Client objects
-    //  */
-    /*
+    /**
+    * @return Client[] Returns an array of Client objects
+    */
+
     public function findByExampleField($value)
     {
         return $this->createQueryBuilder('c')
-            ->andWhere('c.exampleField = :val')
-            ->setParameter('val', $value)
-            ->orderBy('c.id', 'ASC')
-            ->setMaxResults(10)
+            ->select('count(c.id)')
+            ->Where('c.exampleField = :val')
             ->getQuery()
             ->getResult()
         ;
     }
-    */
+    
 
-    /*
+    
     public function findOneBySomeField($value): ?Client
     {
         return $this->createQueryBuilder('c')
@@ -72,5 +70,5 @@ class ClientRepository extends ServiceEntityRepository
             ->getOneOrNullResult()
         ;
     }
-    */
+    
 }
