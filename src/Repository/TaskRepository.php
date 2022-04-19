@@ -48,19 +48,21 @@ class TaskRepository extends ServiceEntityRepository
     // /**
     //  * @return Task[] Returns an array of Task objects
     //  */
-    /*
-    public function findByExampleField($value)
+    
+    public function CountTask($value,$value2)
     {
         return $this->createQueryBuilder('t')
-            ->andWhere('t.exampleField = :val')
+            ->where('t.user = :val')
+            ->andWhere('t.status = :va2')
             ->setParameter('val', $value)
-            ->orderBy('t.id', 'ASC')
-            ->setMaxResults(10)
+            ->setParameter('va2', $value2)
             ->getQuery()
-            ->getResult()
+            ->getResult();
+
+            
         ;
     }
-    */
+    
 
     /*
     public function findOneBySomeField($value): ?Task
