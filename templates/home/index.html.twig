@@ -75,10 +75,10 @@
     
     <div class="content">
       <img src="img/avatar.png" alt="">
-      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Nom:</strong> <span class="badge bg-warning"> ??????? </span> </p>
-      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Prenom:</strong> <span class="badge bg-warning"> ??????? </span> </p>
-      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Email:</strong><span class="badge bg-warning"> ??????? </span></p>
-      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Roles:</strong> <span class="badge bg-warning"> ??????? </span> </p>
+      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Nom:</strong> <span class="badge bg-warning"> {{app.user.nom}} </span> </p>
+      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Prenom:</strong> <span class="badge bg-warning"> {{app.user.prenom}} </span> </p>
+      <p><strong class ="badge" style="background-color: #509bfc; color:#ffff;">Email:</strong><span class="badge bg-warning"> {{app.user.email}} </span></p>
+      <p><strong id ="role" class ="badge" style="background-color: #509bfc; color:#ffff;">Roles:</strong> <span class="badge bg-warning"> {{role}} </span> </p>
     </div>
     
   </div>
